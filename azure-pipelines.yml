@@ -18,9 +18,7 @@ steps:
     echo Tommorrow is another day.
   displayName: 'Run a multi-line script'
 
-- script: hello.sh
-  displayName: 'Run a script code'
-
-- task: Bash@3
+- task: PowerShell@2
   inputs:
     filePath: 'hello.sh'
+
