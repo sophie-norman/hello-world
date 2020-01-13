@@ -13,7 +13,14 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: |
+- script: 
     echo Hello MSCI.
     echo Tommorrow is another day.
   displayName: 'Run a multi-line script'
+
+- script: hello.sh
+  displayName: 'Run a script code'
+
+- task: BatchScript@1
+  inputs:
+    filename: 'hello.sh'
